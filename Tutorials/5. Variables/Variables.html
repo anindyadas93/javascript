@@ -4,10 +4,17 @@
     </head>
     <body>
         <script type="text/javascript">
+            //global variables
+            var value=100;
+            function a(){
+                alert("Global Variable : "+value);
+            }
+            a();
+            //local variables
             var a=10;
             var b=20;
             var c=a+b;
-            document.writeln(c);
+            document.writeln("Local Variable : "+c);
         </script>
     </body>
 </html>
