@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Function</title>
+    </head>
+    <body>
+        <Script type="text/javascript">
+            //function without argument
+            function hello(){
+                alert("Hello!");
+            }
+            //function with argument
+            function getCube(num){
+                alert(num*num*num);
+            }
+            //function with return value
+            function getInfo(){
+                return "JavaScript Function";
+            }
+            //function object
+            var pow = new Function("num1","num2","return Math.pow(num1,num2)");
+            document.writeln(pow(2,3)+"<br>");
+        </Script>
+        <input type="button" onclick="hello()" value="Hello"><br>
+        <input type="button" onclick="getCube(5)" value="Cube"><br>
+        <script type="text/javascript">
+            document.writeln(getInfo());
+        </script>
+    </body>
+</html>
